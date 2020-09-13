@@ -1,0 +1,12 @@
+version: "2"
+services:
+  app:
+    container_name: tim-ecp
+    build:
+      context: ../
+      dockerfile: deployments/app/Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+     - service_port=5000
+     - log_level=INFO    
