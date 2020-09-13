@@ -4,7 +4,7 @@ The sample code demonstrate how to build a simple Flask RESTful API with Docker-
 
 ## Requirements
 
-To build this sample environment you will need [docker], [docker compose], [python] and  [pip].
+To build this sample environment you will need [docker] and [docker compose].
 
 ## Deploy and Run
 
