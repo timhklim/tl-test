@@ -34,7 +34,7 @@ app.config['JSON_SORT_KEYS'] = False
 infos = dict([
             ('Service_name',"tim-lim/anz-ecp"),
             ('version',"1.0.0"),
-            ('git_commit_sha',"abc57858585"),
+            ('git_commit_sha',"caa4bba71a"),
             ('environment',dict([
                                 ('service_port',service_port),
                                 ('log_level',log_level)
