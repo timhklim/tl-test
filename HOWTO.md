@@ -124,23 +124,23 @@ $ docker start -i tim-ecp
 **You may see nothing until the `/info` endpoint is being accessed.**
 
 Leave this session alone as the application is written, with pupose, to
-only report `/info` API endpoint requests in structured data format.
+only report `/info` API endpoint requests.
 
 When you access the <http://127.0.0.1:5000/info> through a Web Client, you
 should see:
 
 ![](media/01c766e4e77aeb36f316d1113253db4d.png)
 
-**Output data is in `JSON` format.**
+Output data is in **`JSON` format.**
 
 Back to the terminal session where you have started `docker start` command
-earlier, you should start to see the access to `/info` API endpoint is being
-reported in structured data format. One line per access request.
+earlier, you should start to see the access to `/info` endpoint is being
+reported in **structured data format**. One line per access request.
 
 ![](media/bfe0d8bf75eea8702df1333200fa2015.png)
 
 When you access any other undefined endpoint, for example,
-<http://127.0.0.1:5000/missing> through a Web Client, you should see a
+<http://127.0.0.1:5000/missing> through the same Web Client, you should see a
 response advising the endpoint does not exist
 
 ![](media/67cc26c7114cd482e8d3c04e7647b809.png)
@@ -151,7 +151,7 @@ response advising the endpoint does not exist
 
 These software must be installed on your test host
 
-*  python 3
+*  python 
 *  pip
 
 ### Install required python modules into local environment
@@ -167,7 +167,7 @@ $ python app/app.py
 ```
 The verification steps from WEB client provided in the previous section can be used.
 
-### Development Environment
+## Development Environment
 
 This piece of development was built entirely on a window 10 desktop involving
 the following components:
