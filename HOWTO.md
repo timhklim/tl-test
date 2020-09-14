@@ -81,7 +81,7 @@ requests.
 
 The `log_level` must be set to `INFO` level to allow `Flask` `logger` to display
 the required logged `/info` events, which is output to `STDOUT` in structured data
-format. The application is designed to ONLY output `info` request events on purpose to ease
+format. The application is designed to ONLY output `/info` request events on purpose to ease
 verifcation of this requirement. The `Flask` `logger` is being leveraged to allow
 easy manipulate with minimise code change later, if logs retention is required.
 
@@ -113,15 +113,15 @@ cf95f6b31042 deployments_app tim-ecp 0.0.0.0:5000-\>5000/tcp
 
 ### Verify Test Result
 
-Run `docker start` command to run attach an interactive terminal session to
->   the running container to allow verifying of the `/info` API endpint served by
->   the container.
+Run `docker start` command to run an interactive terminal session against
+the running container to verify that the `/info` endpoint access request 
+is being reported in structured data format.
 
 ```bash
 $ docker start -i tim-ecp
 ```
 
-**You see nothing until you have accessed the `/info` endpoint.**
+**You may see nothing until the `/info` endpoint is being accessed.**
 
 Leave this session alone as the application is written, with pupose, to
 only report `/info` API endpoint requests in structured data format.
@@ -131,7 +131,7 @@ should see:
 
 ![](media/01c766e4e77aeb36f316d1113253db4d.png)
 
-Output data is in **JSON** format.
+**Output data is in `JSON` format.**
 
 Back to the terminal session where you have started `docker start` command
 earlier, you should start to see the access to `/info` API endpoint is being
@@ -175,21 +175,21 @@ the following components:
 *   Visual Studio Code Editor and various plugins
 *   Docker Desktop for windows
 *   Docker Compose
-*   Powershell
-*   Git client
-*   Make
-*   Python
-*   Pip
+*   powershell
+*   git client
+*   make
+*   python
+*   pip
 
 The on premises infrastructure (an aged 5 years old laptop computer) has turned
 out being a real winner in term of cost for compute and data storage as compared
 to the cloud option or the efforts would be required to spin up a virtual unix VM. 
-The only petty cloud usage cost (probably under a dollar this month) when I
-conducted the portability test on an AWS EC2 instance for half an hour.
+The only petty cloud usage cost **(probably under a dollar this month)** for 
+the few minutes of portability test on an `AWS EC2 instance`.
 
-### Possible Code Enhancement 
+## Possible Code Enhancements 
 
-*   Rendering the `info` API endpoint JSON output for better visual effect
+*   Rendering the `/info` API endpoint JSON output for better visual effect
 *   Enable Token Authorization for endpoint access
 
-###  Hope you like my code!!! 
+#  Hope you like my code!!! 
